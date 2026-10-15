@@ -1,12 +1,9 @@
 # Gold vs Bitcoin — Time-Series Modelling, Forecasting and Diagnostics
 
 **Mini-projet Séries Temporelles — TEK-UP — Master Data Science & IA**  
-**Option A (Finance)** · Cours : Séries Temporelles pour Data Science & IA
+         Séries Temporelles pour Data Science & IA
 
-| | |
-|---|---|
-| **Groupe** | Bilel Amri · Hadi Laifaa · Mohamed Amine Gotai · Ahmed Touaibi |
-| **Enseignant** | Ahmed Dhouibi |
+
 | **Période des données** | 2019-01-01 → 2026-10-14 (date de fin fixée) |
 | **Observations** | 1 955 jours ouvrés · train 1 759 (90 %) · test 196 (10 %) |
 
