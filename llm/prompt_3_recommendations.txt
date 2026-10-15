@@ -1,0 +1,19 @@
+Using ONLY the results below, write simulated investment recommendations for a portfolio holding gold and Bitcoin.
+
+  Asset   Model     1     5    10
+Bitcoin   ARIMA  1.01 1.015 1.026
+Bitcoin     GRU  0.99 1.003 1.006
+Bitcoin    LSTM 0.986 1.025 1.032
+Bitcoin Prophet 10.04 4.693 3.425
+Bitcoin     VAR 1.005 1.014 1.026
+   Gold   ARIMA 1.001 1.007 1.018
+   Gold     VAR 1.001 1.006 1.017
+
+Volatility model: GARCH(1,1) persistence:   Asset Distribution  Persistence
+   Gold       normal         0.94
+   Gold            t        0.963
+Bitcoin       normal        0.918
+Bitcoin            t        0.996
+Cointegration: Not cointegrated (p = 0.9774 >= 0.05). Granger: Gold -> Bitcoin: No Granger causality (p >= 0.05), Bitcoin -> Gold: No Granger causality (p >= 0.05).
+
+TASK: give 3 recommendations, and for each one list YOURSELF its limits and risks.

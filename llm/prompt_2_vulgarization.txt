@@ -1,0 +1,39 @@
+Here are the results of my models on gold (GLD) and Bitcoin.
+
+ARIMA RESIDUAL TESTS
+  Asset Final order           Test  Statistic   p-value                        Reading
+   Gold   (0, 1, 0) Ljung-Box (10)      6.813     0.743   no remaining autocorrelation
+   Gold   (0, 1, 0)    Jarque-Bera      847.4 9.61e-185 normality rejected (fat tails)
+   Gold   (0, 1, 0)   ARCH-LM (10)     110.03  5.27e-19            ARCH effect present
+Bitcoin   (2, 1, 2) Ljung-Box (10)      9.994     0.441   no remaining autocorrelation
+Bitcoin   (2, 1, 2)    Jarque-Bera      13697         0 normality rejected (fat tails)
+Bitcoin   (2, 1, 2)   ARCH-LM (10)     33.521  0.000223            ARCH effect present
+
+GRANGER CAUSALITY (VAR on returns)
+      Direction  F-stat  p-value                       Conclusion
+Gold -> Bitcoin   0.119   0.7298 No Granger causality (p >= 0.05)
+Bitcoin -> Gold   0.006   0.9365 No Granger causality (p >= 0.05)
+
+COINTEGRATION
+                      Test  Statistic  p-value                            Conclusion
+Engle-Granger (log prices)     -0.266   0.9774 Not cointegrated (p = 0.9774 >= 0.05)
+
+GARCH(1,1)
+  Asset Distribution  alpha  beta  Persistence    AIC  ARCH-LM p (std. resid) Std. residuals
+   Gold       normal  0.105 0.835         0.94   4792                  0.7986   no ARCH left
+   Gold            t  0.072 0.891        0.963 4715.8                  0.7495   no ARCH left
+Bitcoin       normal  0.136 0.782        0.918   9681                  0.1369   no ARCH left
+Bitcoin            t  0.067 0.929        0.996 9274.3                  0.0744   no ARCH left
+
+FORECAST COMPARISON, RMSE / naive RMSE (log price, below 1 = better than 'tomorrow = today')
+  Asset   Model     1     5    10
+Bitcoin   ARIMA  1.01 1.015 1.026
+Bitcoin     GRU  0.99 1.003 1.006
+Bitcoin    LSTM 0.986 1.025 1.032
+Bitcoin Prophet 10.04 4.693 3.425
+Bitcoin     VAR 1.005 1.014 1.026
+   Gold   ARIMA 1.001 1.007 1.018
+   Gold     VAR 1.001 1.006 1.017
+
+TASK: explain these results to a non-statistician decision maker (a company treasurer), in about 300 words, with simple images or analogies
+and no unexplained jargon. State clearly what the results do NOT show.

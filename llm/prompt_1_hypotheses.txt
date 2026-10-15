@@ -1,0 +1,19 @@
+You are an expert in time-series econometrics. Here are the descriptive statistics of daily log returns (train sample 2019-2026, business days)
+and the stationarity tests (ADF H0 = unit root; KPSS H0 = stationary).
+
+DESCRIPTIVE STATISTICS
+  Asset     mean  variance      std  skewness  excess kurtosis
+   Gold 0.000673   9.9e-05 0.009938  -0.41563           3.2983
+Bitcoin 0.001762  0.001585  0.03981  -0.92519           14.051
+
+STATIONARITY TESTS
+           Series  ADF p-value  KPSS p-value     Conclusion
+       Gold price            1        0.0001 Non-stationary
+   Gold log price       0.9944        0.0001 Non-stationary
+      Gold return            0        0.0935     Stationary
+    Bitcoin price        0.633        0.0001 Non-stationary
+Bitcoin log price       0.3283        0.0001 Non-stationary
+   Bitcoin return            0        0.3843     Stationary
+
+TASK: (1) Propose 4 to 6 candidate model families to test for each asset and justify each from the numbers above.
+(2) For each candidate, say which diagnostic test would validate or reject it. (3) Do NOT invent any numerical result: if you need a number I did not give, say so.

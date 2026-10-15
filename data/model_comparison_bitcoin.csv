@@ -1,0 +1,7 @@
+,RMSE h=1,RMSE h=5,RMSE h=10,Complexity,Interpretability,Compute time (s)
+ARIMA,0.029,0.0678,0.1013,"ARIMA(2, 1, 2)",high,124.3
+GRU,0.0284,0.067,0.0994,8001 parameters,low (black box),26.9
+LSTM,0.0283,0.0685,0.1019,10451 parameters,low (black box),24.2
+Naive,0.0287,0.0668,0.0987,0 parameters,very high,0.0
+Prophet,0.2878,0.3134,0.3382,trend + yearly seasonality,medium (components),54.0
+VAR,0.0288,0.0677,0.1013,VAR(1) on 2 series,high,0.0

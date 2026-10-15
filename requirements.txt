@@ -1,0 +1,12 @@
+numpy
+pandas
+yfinance
+matplotlib
+scipy
+statsmodels
+arch
+pmdarima
+scikit-learn
+joblib
+tensorflow
+prophet

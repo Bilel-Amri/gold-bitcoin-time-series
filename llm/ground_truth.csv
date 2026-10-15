@@ -1,0 +1,9 @@
+Fact,Real value
+"ADF p-value, Bitcoin log price",0.3283
+"KPSS p-value, Bitcoin log price",0.0001
+"Granger Gold -> Bitcoin, p",0.7298
+"Granger Bitcoin -> Gold, p",0.9365
+Engle-Granger p,0.9774
+Max rolling correlation,0.653
+Bitcoin excess kurtosis,14.05
+Bitcoin GARCH persistence,0.996

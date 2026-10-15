@@ -1,0 +1,7 @@
+Asset,Final order,Residual std,Test,Statistic,p-value,Reading
+Gold,"(0, 1, 0)",0.0099,Ljung-Box (10),6.813,0.743,no remaining autocorrelation
+Gold,"(0, 1, 0)",0.0099,Jarque-Bera,847.4,9.61e-185,normality rejected (fat tails)
+Gold,"(0, 1, 0)",0.0099,ARCH-LM (10),110.025,5.27e-19,ARCH effect present
+Bitcoin,"(2, 1, 2)",0.0397,Ljung-Box (10),9.994,0.441,no remaining autocorrelation
+Bitcoin,"(2, 1, 2)",0.0397,Jarque-Bera,13697.1,0,normality rejected (fat tails)
+Bitcoin,"(2, 1, 2)",0.0397,ARCH-LM (10),33.521,0.000223,ARCH effect present
