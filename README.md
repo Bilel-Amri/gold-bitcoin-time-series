@@ -51,7 +51,6 @@ gold vs btc/
 │   ├── prompt_2_vulgarization.txt
 │   ├── prompt_3_recommendations.txt
 │   └── ground_truth.csv
-├── Rapport_Gold_Bitcoin_Series_Temporelles.docx
 ├── requirements.txt
 └── README.md
 ```
@@ -192,13 +191,10 @@ Les parties avancées (LSTM, GRU, Prophet, évaluation multi-horizon, LLM) sont 
 |----------|---------|
 | Notebook exécuté | `notebook/gold_bitcoin_project.ipynb` |
 | Code R (socle) | `classical_core.R` |
-| Rapport 15–25 pages | `Rapport_Gold_Bitcoin_Series_Temporelles.docx` |
 | Données & figures | dossiers `data/`, `figures/`, `llm/` |
 
 ---
 
 ## 11. Licence et usage
-
-Projet académique — TEK-UP.  
-Les prévisions et recommandations simulées **ne constituent pas un conseil d’investissement**.  
+ 
 Données de marché via Yahoo Finance (`yfinance` / `quantmod`).
